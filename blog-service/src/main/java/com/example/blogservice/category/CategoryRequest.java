@@ -1,4 +1,4 @@
-package com.example.blogservice.dto;
+package com.example.blogservice.category;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,11 +11,9 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryResponse {
-
-    private Long id;
+public class CategoryRequest {
     private String name;
-    private Date created_at;
-    private String created_by;
-    private Date deleted_at;
+    private Date createdAt;
+    private String createdBy;
+    private Date deletedAt;
 }

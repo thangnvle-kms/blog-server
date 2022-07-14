@@ -1,6 +1,5 @@
-package com.example.blogservice.repository;
+package com.example.blogservice.category;
 
-import com.example.blogservice.model.CategoryModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ICategoryRepository extends JpaRepository<CategoryModel, Long> {
