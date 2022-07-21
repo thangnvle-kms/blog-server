@@ -26,7 +26,7 @@ public class CategoryModel {
 
     @Id
     @GeneratedValue
-    @Column(nullable=false)
+    @Column(name = "id")
     private Long id;
 
     private String name;

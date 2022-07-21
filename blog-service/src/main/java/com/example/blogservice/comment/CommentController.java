@@ -9,6 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/comment")
 @RequiredArgsConstructor
+@CrossOrigin()
 public class CommentController {
     private final CommentServices commentServices;
 

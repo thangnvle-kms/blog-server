@@ -1,5 +1,6 @@
 package com.example.blogservice.post;
 
+import com.example.blogservice.base.BaseController;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +10,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/post")
 @RequiredArgsConstructor
-public class PostController {
+@CrossOrigin()
+public class PostController extends BaseController {
 
     private final PostService postService;
 
@@ -27,7 +29,7 @@ public class PostController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public PostModel getModel(@PathVariable("id") long id) { return postService.getOnePost(id);}
+    public PostModel getPost(@PathVariable("id") long id) { return postService.getOnePost(id);}
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)

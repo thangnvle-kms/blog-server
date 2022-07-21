@@ -19,6 +19,7 @@ public class PostModel {
 
     @Id
     @GeneratedValue
+    @Column(name = "id")
     public Long id;
 
     @ManyToOne(optional=false)

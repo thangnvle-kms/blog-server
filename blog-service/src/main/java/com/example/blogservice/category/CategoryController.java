@@ -1,6 +1,8 @@
 package com.example.blogservice.category;
 
+import com.example.blogservice.base.BaseController;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,8 +11,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/category")
 @RequiredArgsConstructor
-public class CategoryController {
+@CrossOrigin()
+public class CategoryController extends BaseController {
 
+    @Autowired
     private final CategoryService categoryService;
 
     @PostMapping

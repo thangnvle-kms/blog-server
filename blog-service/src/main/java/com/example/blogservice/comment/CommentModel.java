@@ -17,7 +17,7 @@ public class CommentModel {
 
     @Id
     @GeneratedValue
-    @Column(nullable=false)
+    @Column(name = "id")
     public Long id;
     public Long userId;
 

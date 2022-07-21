@@ -36,6 +36,7 @@ public class PostService {
 
     private PostResponse mapToPostResponse(PostModel postModel) {
         return  PostResponse.builder()
+                .id(postModel.getId())
                 .categoryId(postModel.getCategoryId())
                 .userId(postModel.getUserId())
                 .title(postModel.getTitle())
