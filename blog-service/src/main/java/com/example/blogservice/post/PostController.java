@@ -42,4 +42,10 @@ public class PostController extends BaseController {
     public void deletePost(@PathVariable("id") long id) {
         postService.deleteOnePost(id);
     }
+
+//    @GetMapping
+//    @ResponseStatus(HttpStatus.OK)
+//    public List<PostResponse> findPost(@PathVariable String keyword) {
+//        return postService.findPost(keyword);
+//    }
 }

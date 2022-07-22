@@ -70,4 +70,8 @@ public class PostService {
     public void deleteOnePost(@PathVariable long id) {
         postRepository.deleteById(id);
     }
+
+//    public List<PostResponse> findPost(String keyword) {
+//       List<PostModel> posts = postRepository.findAll(keyword);
+//    }
 }
